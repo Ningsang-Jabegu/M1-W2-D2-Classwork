@@ -97,12 +97,13 @@
         padding: 0.5em 2.5em;
         border-radius: 2em;
         margin-top: 1em;
-        margin-left: 4.5em;
+        /*margin-left: 4.5em;*/
+        border: none;
       }
       .hire-btn:hover {
         background: #eb4b60ce;
         transition: 250ms;
-        cursor: crosshair;
+        cursor: pointer;
       }
       .content-center {
         display: block;
@@ -112,7 +113,7 @@
         fill: #fff;
         height: 1.5em;
         width: 1.5em;
-        margin-left: 8.2em;
+        /*margin-left: 8.2em;*/
       }
       .scroll-txt {
         margin-top: 5em;
@@ -120,9 +121,102 @@
         font-family: "poppins";
         font-size: 9pt;
         text-align: center;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
       }
+      .about-me-txt {
+        color: #fff;
+        font-family: "arial";
+        font-weight: 600;
+      }
+      .index-about-section {
+        margin: 4em;
+      }
+      .index-about-1 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.5em;
+      }
+      .index-about-1 img {
+        border-radius: 50%;
+        height: 9em;
+        width: auto;
+      }
+      .index-about-1-1 {
+        background: #31264fc5;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.8em;
+        height: max-content;
+        width: 70%;
+        color: #fff;
+        font-family: "poppins";
+        font-size: 12pt;
+        border-radius: 1.5em;
+      }
+      .index-about-1-1 div:nth-child(2) h3 {
+        font-size: 12pt;
+        font-weight: 500;
+      }
+      .index-about-1-1 .index-about-2 {
+        width: 60%;
+      }
+      .index-about-1-1 .index-about-bar {
+        width: 35%;
+      }
+      .index-bar {
+        display: flex;
+        justify-content: space-between;
+      }
+      .no-margin {
+        margin-left: 0;
+      }
+      .index-bar-1 {
+        width: 100%;
+        height: 0.5em;
+        border: 1px solid grey;
+        border-radius: 2em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+      }
+      .index-bar-1-show {
+        height: 100%;
+        width: 95%;
+        background: rgb(215, 215, 16);
+        border-radius: 2em;
+      }
+      .index-bar-2-show {
+        height: 100%;
+        width: 75%;
+        background: #eb4b60;
+        border-radius: 2em;
+      }
+      .index-bar-3-show {
+        height: 100%;
+        width: 85%;
+        background: #b84beb;
+        border-radius: 2em;
+      }
+      .index-status-container {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 2em;
+      }
+      .index-status-1 {
+          display: block;
+          color: #fff;
+      }
+      .index-status-1 svg {
+          height: 1.5em;
+          width: 1.5em;
+          fill: #fff;
+      }
+      .test {
+          display: flex;
+        justify-content: center;
+    align-items: center;
+}
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav>
@@ -146,7 +240,7 @@
     </nav>
     <div class="body-content-home">
       <div>
-        <img src="/Image/profile-pic.JPG" />
+        <img src="/Image/profile-pic.JPG" alt="This is my picture" />
         <h1 class="profile-name">Ningsang Jabegu</h1>
         <p>I'm a Front-End developer</p>
         <div class="content-center">
@@ -182,20 +276,74 @@
               />
             </svg>
           </div>
-          <button class="hire-btn">Hire Me</button>
+          <div class="test">
+            <button class="hire-btn">Hire Me</button>
+          </div>
         </div>
         <p class="scroll-txt">scroll down</p>
-        <svg
-          class="mouse-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 384 512"
-        >
-          <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-          <path
-            d="M0 352a160 160 0 0 0 160 160h64a160 160 0 0 0 160-160V224H0zM176 0h-16A160 160 0 0 0 0 160v32h176zm48 0h-16v192h176v-32A160 160 0 0 0 224 0z"
-          />
-        </svg>
+        <div class="test">
+            <svg
+            class="mouse-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+            <path
+              d="M0 352a160 160 0 0 0 160 160h64a160 160 0 0 0 160-160V224H0zM176 0h-16A160 160 0 0 0 0 160v32h176zm48 0h-16v192h176v-32A160 160 0 0 0 224 0z"
+            />
+          </svg> 
+        </div>
+        
       </div>
+    </div>
+    <div class="index-about-section">
+      <h1 class="about-me-txt">About Me</h1>
+      <div class="index-about-1">
+        <img src="/Image/profile-pic.JPG" alt="This is my picture" />
+        <div class="index-about-1-1">
+          <div class="index-about-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              consequuntur est voluptatum impedit aliquid laboriosam dicta
+              pariatur nesciunt beatae quisquam omnis, iste laudantium, aut
+              ipsam itaque repudiandae ad harum odit.
+            </p>
+            <button class="hire-btn no-margin">Download CV</button>
+          </div>
+          <div class="index-about-bar">
+            <div class="index-bar">
+              <h3>Development</h3>
+              <h3>95%</h3>
+            </div>
+            <div class="index-bar-1">
+              <div class="index-bar-1-show"></div>
+            </div>
+            <div class="index-bar">
+              <h3>Photography</h3>
+              <h3>75%</h3>
+            </div>
+            <div class="index-bar-1">
+              <div class="index-bar-2-show"></div>
+            </div>
+            <div class="index-bar">
+              <h3>UI/UX design</h3>
+              <h3>85%</h3>
+            </div>
+            <div class="index-bar-1">
+                <div class="index-bar-3-show"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index-status-container">
+        <div class="index-status-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z"/></svg>
+            <i class="far fa-mug-hot"></i>
+        </div>
+        <div class="index-status-1"></div>
+        <div class="index-status-1"></div>
+        <div class="index-status-1"></div>
     </div>
   </body>
 </html>
